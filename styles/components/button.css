@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   padding: 1.5rem;
-  text-decoration: none;
 }
 
 .button--style {
   padding: 0.6rem;
   cursor: pointer;
-  background-color: #4caf50;
+  background-color: skyblue;
   font-weight: 700;
   letter-spacing: 0.05rem;
-  text-decoration: none;
+  border: none;
+  color: gray;
 }
