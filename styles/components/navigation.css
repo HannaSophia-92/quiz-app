@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  width: 100%;
+  border: 1px solid skyblue;
+  position: fixed;
+  bottom: 0;
+  background-color: aqua;
+}
+
+.navigation__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.navigation__icons--style {
+  color: grey;
+}
