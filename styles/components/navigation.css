@@ -3,10 +3,9 @@
   flex-wrap: wrap;
   height: 100px;
   width: 100%;
-  border: 1px solid skyblue;
   position: fixed;
   bottom: 0;
-  background-color: aqua;
+  background-color: #d5dbdb;
 }
 
 .navigation__icons {
