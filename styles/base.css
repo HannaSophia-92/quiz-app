@@ -5,17 +5,34 @@
 }
 
 html {
-  background-image: url(/images/background.jpeg);
+  background-image: url(/images/mountain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 body {
+  display: grid;
+  grid-template-rows: 48px auto 48px;
+  height: 100vh;
   font-family: "Montserrat", sans-serif;
+  color: #565a5b;
 }
 
 header {
   text-align: center;
   text-transform: uppercase;
-  margin: 1.6rem;
+  background-color: #d5dbdb;
+}
+
+h1 {
+  padding: 5px;
+  font-size: 1.8rem;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
 }
