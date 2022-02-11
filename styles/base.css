@@ -7,7 +7,7 @@
 body {
   background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   display: grid;
   grid-template-rows: 48px auto 48px;
   height: 100vh;
