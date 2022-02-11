@@ -1,0 +1,42 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.form__header {
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.form__textarea {
+  background-color: rgba(12, 13, 14, 0.795);
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.form__button {
+  text-align: center;
+  padding: 1rem;
+}
+
+.form__button--submit {
+  padding: 15px;
+  background-color: rgba(12, 13, 14, 0.795);
+  color: rgb(29, 77, 235);
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  border: none;
+  cursor: pointer;
+}
