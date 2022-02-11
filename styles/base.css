@@ -4,24 +4,21 @@
   padding: 0;
 }
 
-html {
-  background-image: url(/images/mountain.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 body {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: grid;
   grid-template-rows: 48px auto 48px;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  color: #565a5b;
+  color: grey;
 }
 
 header {
   text-align: center;
   text-transform: uppercase;
-  background-color: #d5dbdb;
+  background-color: black;
 }
 
 h1 {
@@ -29,10 +26,7 @@ h1 {
   font-size: 1.8rem;
 }
 
-.main__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
+a {
+  text-decoration: none;
+  color: black;
 }
