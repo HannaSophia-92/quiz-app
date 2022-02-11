@@ -18,11 +18,16 @@
     </header>
 
     <main class="form__container">
-      <form class="form">
+      <form
+        class="form"
+        aria-labelledby="form-heading"
+        aria-describedby="form-description"
+      >
         <span class="form__header">
-          <label for="question">Add Question</label>
+          <label for="question" id="form-heading">Add Question</label>
         </span>
         <textarea
+          id="form-description"
           class="form__textarea"
           name="question"
           id="question"
@@ -32,11 +37,16 @@
         ></textarea>
       </form>
 
-      <form class="form">
+      <form
+        class="form"
+        aria-labelledby="form-heading"
+        aria-describedby="form-description"
+      >
         <span class="form__header">
-          <label for="answer">Add Answer</label>
+          <label for="answer" id="form-heading">Add Answer</label>
         </span>
         <textarea
+          id="form-description"
           class="form__textarea"
           name="answer"
           id="answer"
@@ -44,6 +54,8 @@
           rows="10"
           placeholder="Add answer here..."
         ></textarea>
+        <label class="form__header" for="tags">Add tags</label>
+        <input class="form__textarea" type="text" id="tags" />
         <span class="form__button">
           <button type="submit" class="form__button--submit">Submit</button>
         </span>
