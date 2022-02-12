@@ -23,7 +23,7 @@
 
 .card__bookmark {
   position: absolute;
-  width: 70px;
+
   right: 30px;
   top: -35px;
 }
@@ -37,6 +37,11 @@
 
 .card__question {
   line-height: 1.5rem;
+}
+
+.card__answer {
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .card__tags {
