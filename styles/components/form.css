@@ -33,8 +33,10 @@
 
 .form__button--submit {
   padding: 15px;
-  background-color: rgba(12, 13, 14, 0.795);
-  color: rgb(29, 77, 235);
+  width: 130px;
+  background-color: rgba(7, 42, 197, 0.795);
+  border-radius: 18px;
+  color: grey;
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.05rem;
