@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script
       src="https://kit.fontawesome.com/38a93f2bbc.js"
       crossorigin="anonymous"
@@ -15,6 +15,53 @@
     <header>
       <h1>Profile</h1>
     </header>
-    <main></main>
+
+    <main class="profile__container">
+      <figure class="profile">
+        <img
+          class="profile__picture"
+          src="https://source.unsplash.com/random/300x300"
+          alt=""
+        />
+        <figcaption class="profile__caption">Jane Doe</figcaption>
+      </figure>
+
+      <article class="profile__text">
+        <p class="profile__text--style">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          vero enim dolore minima et repellat quo possimus, officiis iste
+          laboriosam, suscipit nobis veniam? Laudantium enim dolor saepe.
+          Praesentium, nam quo.
+        </p>
+      </article>
+
+      <section>
+        <h2 class="profile__tags--header">Skills</h2>
+        <ul class="profile__tags">
+          <li class="profile__tags--style"><a href="#">skill 1</a></li>
+          <li class="profile__tags--style"><a href="#">skill 2</a></li>
+          <li class="profile__tags--style"><a href="#">skill 3</a></li>
+          <li class="profile__tags--style"><a href="#">skill 4</a></li>
+        </ul>
+      </section>
+      <span class="profile__button">
+        <button class="profile__button--logout">Logout</button>
+      </span>
+    </main>
+
+    <footer class="navigation">
+      <a href="#main"
+        ><i class="fa-solid fa-house fa-2x navigation__icons--style"></i
+      ></a>
+      <a href="#bookmark"
+        ><i class="fa-solid fa-bookmark fa-2x navigation__icons--style"></i
+      ></a>
+      <a href="#create"
+        ><i class="fa-solid fa-square-plus fa-2x navigation__icons--style"></i
+      ></a>
+      <a href="#profile"
+        ><i class="fa-solid fa-user fa-2x navigation__icons--style"></i
+      ></a>
+    </footer>
   </body>
 </html>
