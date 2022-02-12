@@ -17,8 +17,8 @@
   position: relative;
   background-color: grey;
   opacity: 0.6;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 6px 8px rgba(92, 90, 90, 0.918);
+  color: black;
+  box-shadow: 5px 6px 8px rgba(92, 90, 90, 0.918);
 }
 
 .card__bookmark {
