@@ -18,7 +18,7 @@
 }
 
 .form__textarea {
-  background-color: rgb(63, 63, 63);
+  background-color: gray;
   opacity: 0.6;
   font-size: 1rem;
   padding: 5px;
