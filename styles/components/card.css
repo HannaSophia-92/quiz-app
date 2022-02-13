@@ -75,7 +75,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .card__tags {
     display: flex;
     flex-direction: column;
@@ -88,4 +88,13 @@
   border-radius: 18px;
   text-align: center;
   text-decoration: none;
+}
+
+.card__tags--answer {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
