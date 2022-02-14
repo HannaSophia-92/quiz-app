@@ -22,6 +22,11 @@
   right: 35px;
   top: -3px;
   color: rgb(62, 117, 57);
+  cursor: pointer;
+}
+
+.active {
+  color: crimson;
 }
 
 .card__title {
