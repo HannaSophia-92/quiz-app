@@ -17,15 +17,13 @@
 
 .card__bookmark {
   position: absolute;
-  width: 20px;
-  height: 80px;
-  right: 35px;
+  right: 25px;
   top: -3px;
   color: rgb(62, 117, 57);
   cursor: pointer;
 }
 
-.active {
+.card__active {
   color: crimson;
 }
 
