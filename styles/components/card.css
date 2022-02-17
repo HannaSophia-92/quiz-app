@@ -21,6 +21,8 @@
   top: -3px;
   color: rgb(62, 117, 57);
   cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 
 .card__active {
