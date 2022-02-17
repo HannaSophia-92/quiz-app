@@ -1,12 +1,9 @@
-.profile__container {
-  padding: 3rem;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 30px;
 }
 
 .profile__picture {
@@ -21,26 +18,24 @@
 }
 
 .profile__text {
-  border: 3px solid lightgray;
   padding: 1rem;
   margin: 1.6rem;
   border-radius: 18px;
+  line-height: 1.5rem;
   background-color: grey;
   opacity: 0.6;
   color: rgb(0, 0, 0);
   box-shadow: 0 6px 8px rgba(92, 90, 90, 0.918);
 }
 
-.profile__text--style {
-  line-height: 1.5rem;
-}
-
 .profile__tags {
   padding: 0;
+  margin: 0 30px;
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.7rem;
 }
 
 .profile__tags--header {
@@ -53,8 +48,8 @@
   border-radius: 18px;
   opacity: 0.6;
   box-shadow: 5px 6px 8px rgba(92, 90, 90, 0.918);
-  padding: 5px;
-  width: 4rem;
+  padding: 10px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
 }
