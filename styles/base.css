@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-rows: 48px auto 48px;
   height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: grey;
 }
 
@@ -35,6 +35,6 @@ a {
   color: black;
 }
 
-ul [role="list"] {
+ul [role='list'] {
   list-style: none;
 }
