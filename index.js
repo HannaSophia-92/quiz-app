@@ -1,15 +1,7 @@
-console.clear();
+import navigation from './js/navigation.js';
+import bookmarks from './js/bookmarks.js';
+import cards from './js/cards.js';
 
-// const toggleButton = document.querySelector(".card__bookmark");
-
-// toggleButton.addEventListener("click", () => {
-//   toggleButton.classList.toggle("card__active");
-// });
-
-const toggleButton = document.querySelector('[data-js=toggleBookmark]');
-
-toggleButton.addEventListener('click', () => {
-  toggleButton.classList.toggle('card__active');
-});
-
-console.log(toggleButton);
+navigation();
+bookmarks();
+cards();

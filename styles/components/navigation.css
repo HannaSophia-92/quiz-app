@@ -11,9 +11,16 @@
   align-items: center;
   color: black;
   width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .navigation__icons--style {
   color: grey;
   padding: 5px;
+}
+
+.active {
+  background-color: steelblue;
 }

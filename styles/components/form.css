@@ -1,13 +1,17 @@
-.form__container {
+/* .form__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
+} */
 
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90%;
+  /*forms zentrieren, evtl mit margin*/
 }
 
 .form__header {

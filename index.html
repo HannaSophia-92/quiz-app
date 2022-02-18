@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Quiz App</title>
-    <script defer src="index.js"></script>
+    <script defer src="index.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -18,204 +18,323 @@
     </header>
 
     <main>
-      <article class="card">
-        <button
-          data-js="toggleBookmark"
-          class="card__bookmark"
-          type="button"
-          aria-pressed="false"
-        >
-          <i class="fa-solid fa-bookmark fa-3x"></i>
-        </button>
-        <h2 class="card__title">Question 1</h2>
-        <div class="card__question">
-          Which two nations share the longest border in the world?
-        </div>
-        <div class="card__button">
+      <section class="hidden" data-js="page-home">
+        <article class="card">
           <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
             type="button"
-            class="card__button--style"
             aria-pressed="false"
           >
-            Show Answer
+            <i class="fa-solid fa-bookmark fa-3x"></i>
           </button>
-        </div>
-        <ul class="card__tags" role="list">
-          <li class="card__tags--style"><a href="#">USA and Canada</a></li>
-          <li class="card__tags--style"><a href="#">China and Russia</a></li>
-          <li class="card__tags--style"><a href="#">Chile and Argentina</a></li>
-          <li class="card__tags--style">
-            <a href="#">Kazakhstan and Russia</a>
-          </li>
-        </ul>
-      </article>
+          <h2 class="card__title">Question 1</h2>
+          <div class="card__question">
+            Which two nations share the longest border in the world?
+          </div>
+          <div class="card__button">
+            <button
+              type="button"
+              class="card__button--style"
+              aria-pressed="false"
+            >
+              Show Answer
+            </button>
+          </div>
+          <ul class="card__tags" role="list">
+            <li class="card__tags--style"><a href="#">USA and Canada</a></li>
+            <li class="card__tags--style"><a href="#">China and Russia</a></li>
+            <li class="card__tags--style">
+              <a href="#">Chile and Argentina</a>
+            </li>
+            <li class="card__tags--style">
+              <a href="#">Kazakhstan and Russia</a>
+            </li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <button
-          data-js="toggleBookmark"
-          class="card__bookmark"
-          type="button"
-          aria-pressed="false"
-        >
-          <i class="fa-solid fa-bookmark fa-3x"></i>
-        </button>
-        <h2 class="card__title">Question 1</h2>
-        <div class="card__question">
-          Which two nations share the longest border in the world?
-        </div>
-        <div class="card__button">
-          <button class="card__button--style">Hide Answer</button>
-        </div>
-        <div class="card__answer">
-          Canada and the United States share the longest land border in the
-          world.<br />
-          Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
-          <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
-        </div>
-        <div></div>
-        <ul class="card__tags--answer" role="list">
-          <li class="card__tags--style"><a href="#">Tag 1</a></li>
-          <li class="card__tags--style"><a href="#">Tag 2</a></li>
-          <li class="card__tags--style"><a href="#">Tag 3</a></li>
-          <li class="card__tags--style"><a href="#">Tag 4</a></li>
-        </ul>
-      </article>
+        <article class="card">
+          <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
+            type="button"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question 1</h2>
+          <div class="card__question">
+            Which two nations share the longest border in the world?
+          </div>
+          <div class="card__button">
+            <button class="card__button--style">Hide Answer</button>
+          </div>
+          <div class="card__answer">
+            Canada and the United States share the longest land border in the
+            world.<br />
+            Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
+            <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
+          </div>
+          <div></div>
+          <ul class="card__tags--answer" role="list">
+            <li class="card__tags--style"><a href="#">Tag 1</a></li>
+            <li class="card__tags--style"><a href="#">Tag 2</a></li>
+            <li class="card__tags--style"><a href="#">Tag 3</a></li>
+            <li class="card__tags--style"><a href="#">Tag 4</a></li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <button
-          data-js="toggleBookmark"
-          class="card__bookmark"
-          type="button"
-          aria-pressed="false"
-        >
-          <i class="fa-solid fa-bookmark fa-3x"></i>
-        </button>
-        <h2 class="card__title">Question 2</h2>
-        <div class="card__question">
-          Which of the following is the nickname of Japan?
-        </div>
-        <div class="card__button">
-          <button class="card__button--style">Show Answer</button>
-        </div>
-        <ul class="card__tags" role="list">
-          <li class="card__tags--style">
-            <a href="#">Land of thousand lakes</a>
-          </li>
-          <li class="card__tags--style">
-            <a href="#">Land of the rising sun</a>
-          </li>
-          <li class="card__tags--style"><a href="#">Land of smiles</a></li>
-          <li class="card__tags--style">
-            <a href="#">Land of the blue sky</a>
-          </li>
-        </ul>
-      </article>
+        <article class="card">
+          <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
+            type="button"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question 2</h2>
+          <div class="card__question">
+            Which of the following is the nickname of Japan?
+          </div>
+          <div class="card__button">
+            <button class="card__button--style">Show Answer</button>
+          </div>
+          <ul class="card__tags" role="list">
+            <li class="card__tags--style">
+              <a href="#">Land of thousand lakes</a>
+            </li>
+            <li class="card__tags--style">
+              <a href="#">Land of the rising sun</a>
+            </li>
+            <li class="card__tags--style"><a href="#">Land of smiles</a></li>
+            <li class="card__tags--style">
+              <a href="#">Land of the blue sky</a>
+            </li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <button
-          data-js="toggleBookmark"
-          class="card__bookmark"
-          type="button"
-          aria-pressed="false"
-        >
-          <i class="fa-solid fa-bookmark fa-3x"></i>
-        </button>
-        <h2 class="card__title">Question 2</h2>
-        <div class="card__question">
-          Which of the following is the nickname of Japan?
-        </div>
-        <div class="card__button">
-          <button class="card__button--style">Hide Answer</button>
-        </div>
-        <div class="card__answer">
-          In Japanese, Nippon and Nihon (both of which mean Japan in Japanese)
-          roughly mean the “sun's origin,” or in other words, the place where
-          the sun originates. That's why it's often translated as "The Land of
-          the Rising Sun".
-        </div>
-        <div></div>
-        <ul class="card__tags--answer" role="list">
-          <li class="card__tags--style"><a href="#">Tag 1</a></li>
-          <li class="card__tags--style"><a href="#">Tag 2</a></li>
-          <li class="card__tags--style"><a href="#">Tag 3</a></li>
-          <li class="card__tags--style"><a href="#">Tag 4</a></li>
-        </ul>
-      </article>
+        <article class="card">
+          <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
+            type="button"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question 2</h2>
+          <div class="card__question">
+            Which of the following is the nickname of Japan?
+          </div>
+          <div class="card__button">
+            <button class="card__button--style">Hide Answer</button>
+          </div>
+          <div class="card__answer">
+            In Japanese, Nippon and Nihon (both of which mean Japan in Japanese)
+            roughly mean the “sun's origin,” or in other words, the place where
+            the sun originates. That's why it's often translated as "The Land of
+            the Rising Sun".
+          </div>
+          <div></div>
+          <ul class="card__tags--answer" role="list">
+            <li class="card__tags--style"><a href="#">Tag 1</a></li>
+            <li class="card__tags--style"><a href="#">Tag 2</a></li>
+            <li class="card__tags--style"><a href="#">Tag 3</a></li>
+            <li class="card__tags--style"><a href="#">Tag 4</a></li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <button
-          data-js="toggleBookmark"
-          class="card__bookmark"
-          type="button"
-          aria-pressed="false"
-        >
-          <i class="fa-solid fa-bookmark fa-3x"></i>
-        </button>
-        <h2 class="card__title">Question 3</h2>
-        <div class="card__question">
-          In which country can you find the “Door to Hell”, a natural gas pit
-          that has been on fire since 1971?
-        </div>
-        <div class="card__button">
-          <button class="card__button--style">Show Answer</button>
-        </div>
-        <ul class="card__tags" role="list">
-          <li class="card__tags--style"><a href="#">Azerbaijan</a></li>
-          <li class="card__tags--style"><a href="#">Georgia</a></li>
-          <li class="card__tags--style"><a href="#">Turkmenistan</a></li>
-          <li class="card__tags--style"><a href="#">Uzbekistan</a></li>
-        </ul>
-      </article>
+        <article class="card">
+          <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
+            type="button"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question 3</h2>
+          <div class="card__question">
+            In which country can you find the “Door to Hell”, a natural gas pit
+            that has been on fire since 1971?
+          </div>
+          <div class="card__button">
+            <button class="card__button--style">Show Answer</button>
+          </div>
+          <ul class="card__tags" role="list">
+            <li class="card__tags--style"><a href="#">Azerbaijan</a></li>
+            <li class="card__tags--style"><a href="#">Georgia</a></li>
+            <li class="card__tags--style"><a href="#">Turkmenistan</a></li>
+            <li class="card__tags--style"><a href="#">Uzbekistan</a></li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <button
-          data-js="toggleBookmark"
-          class="card__bookmark"
-          type="button"
-          aria-pressed="false"
+        <article class="card">
+          <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
+            type="button"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question 3</h2>
+          <div class="card__question">
+            In which country can you find the “Door to Hell”, a natural gas pit
+            that has been on fire since 1971?
+          </div>
+          <div class="card__button">
+            <button class="card__button--style">Hide Answer</button>
+          </div>
+          <div class="card__answer">
+            In the Karakum desert in Turkmenistan, near the village of Darvaza,
+            is a hole that has been on fire for over 50 years. Though
+            technically called the Darvaza gas crater, locals know the crater as
+            “The Gates of Hell.” Its fiery glow can be seen for miles around.
+            The Gates of Hell crater was created in 1971 when a Soviet drilling
+            rig accidentally punched into a massive underground natural gas
+            cavern, causing the ground to collapse and the entire drilling rig
+            to fall in.
+          </div>
+          <div></div>
+          <ul class="card__tags--answer" role="list">
+            <li class="card__tags--style"><a href="#">Tag 1</a></li>
+            <li class="card__tags--style"><a href="#">Tag 2</a></li>
+            <li class="card__tags--style"><a href="#">Tag 3</a></li>
+            <li class="card__tags--style"><a href="#">Tag 4</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- bookmark -->
+
+      <section class="hidden" data-js="page-bookmarks">
+        <article class="card">
+          <button type="button" class="button__none" aria-pressed="false">
+            <i class="fa-solid fa-bookmark fa-3x card__bookmark"></i>
+          </button>
+          <h2 class="card__title">Question 1</h2>
+          <div class="card__question">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            quam voluptatem nesciunt assumenda reiciendis iusto alias eum.
+            Veniam, cum ipsam? Facilis blanditiis laborum quas quasi iste
+            voluptas quibusdam suscipit voluptatem.
+          </div>
+          <div class="card__button">
+            <button class="card__button--style">Show Answer</button>
+          </div>
+          <ul class="card__tags" role="list">
+            <li class="card__tags--style"><a href="#">Tag 1</a></li>
+            <li class="card__tags--style"><a href="#">Tag 2</a></li>
+            <li class="card__tags--style"><a href="#">Tag 3</a></li>
+            <li class="card__tags--style"><a href="#">Tag 4</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- create -->
+
+      <section class="hidden" data-js="page-create">
+        <form
+          class="form"
+          aria-labelledby="form-heading"
+          aria-describedby="form-description"
         >
-          <i class="fa-solid fa-bookmark fa-3x"></i>
-        </button>
-        <h2 class="card__title">Question 3</h2>
-        <div class="card__question">
-          In which country can you find the “Door to Hell”, a natural gas pit
-          that has been on fire since 1971?
-        </div>
-        <div class="card__button">
-          <button class="card__button--style">Hide Answer</button>
-        </div>
-        <div class="card__answer">
-          In the Karakum desert in Turkmenistan, near the village of Darvaza, is
-          a hole that has been on fire for over 50 years. Though technically
-          called the Darvaza gas crater, locals know the crater as “The Gates of
-          Hell.” Its fiery glow can be seen for miles around. The Gates of Hell
-          crater was created in 1971 when a Soviet drilling rig accidentally
-          punched into a massive underground natural gas cavern, causing the
-          ground to collapse and the entire drilling rig to fall in.
-        </div>
-        <div></div>
-        <ul class="card__tags--answer" role="list">
-          <li class="card__tags--style"><a href="#">Tag 1</a></li>
-          <li class="card__tags--style"><a href="#">Tag 2</a></li>
-          <li class="card__tags--style"><a href="#">Tag 3</a></li>
-          <li class="card__tags--style"><a href="#">Tag 4</a></li>
-        </ul>
-      </article>
+          <span class="form__header">
+            <label for="question" id="form-heading">Add Question</label>
+          </span>
+          <textarea
+            id="form-description"
+            class="form__textarea"
+            name="question"
+            id="question"
+            cols="30"
+            rows="10"
+            placeholder="Add question here..."
+          ></textarea>
+        </form>
+
+        <form
+          class="form"
+          aria-labelledby="form-heading"
+          aria-describedby="form-description"
+        >
+          <span class="form__header">
+            <label for="answer" id="form-heading">Add Answer</label>
+          </span>
+          <textarea
+            id="form-description"
+            class="form__textarea"
+            name="answer"
+            id="answer"
+            cols="30"
+            rows="10"
+            placeholder="Add answer here..."
+          ></textarea>
+          <label class="form__header" for="tags">Add tags</label>
+          <input
+            class="form__textarea"
+            type="text"
+            id="tags"
+            placeholder="tag1, tag2 ,tag3..."
+          />
+          <span class="form__button">
+            <button type="submit" class="form__button--submit">Submit</button>
+          </span>
+        </form>
+      </section>
+
+      <!-- profile -->
+
+      <section class="hidden" data-js="page-profile">
+        <figure class="profile">
+          <img
+            class="profile__picture"
+            src="https://source.unsplash.com/300x300/?woman"
+            alt=""
+            loading="lazy"
+          />
+          <figcaption class="profile__caption">Jane Doe</figcaption>
+        </figure>
+
+        <article>
+          <p class="profile__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            vero enim dolore minima et repellat quo possimus, officiis iste
+            laboriosam, suscipit nobis veniam? Laudantium enim dolor saepe.
+            Praesentium, nam quo.
+          </p>
+        </article>
+
+        <section>
+          <h2 class="profile__tags--header">Skills</h2>
+          <ul class="profile__tags" role="list">
+            <li class="profile__tags--style"><a href="#">skill 1</a></li>
+            <li class="profile__tags--style"><a href="#">skill 2</a></li>
+            <li class="profile__tags--style"><a href="#">skill 3</a></li>
+            <li class="profile__tags--style"><a href="#">skill 4</a></li>
+          </ul>
+        </section>
+        <span class="profile__button">
+          <button class="profile__button--logout">Logout</button>
+        </span>
+      </section>
     </main>
 
     <footer class="navigation">
-      <a class="navigation__icons" href="/index.html"
-        ><i class="fa-solid fa-house fa-2x navigation__icons--style"></i
-      ></a>
-      <a class="navigation__icons" href="/html/bookmarks.html"
-        ><i class="fa-solid fa-bookmark fa-2x navigation__icons--style"></i
-      ></a>
-      <a class="navigation__icons" href="/html/create.html"
-        ><i class="fa-solid fa-square-plus fa-2x navigation__icons--style"></i
-      ></a>
-      <a class="navigation__icons" href="/html/profile.html"
-        ><i class="fa-solid fa-user fa-2x navigation__icons--style"></i
-      ></a>
+      <button class="navigation__icons" data-js="button-home">
+        <i class="fa-solid fa-house fa-2x navigation__icons--style"></i>
+      </button>
+      <button class="navigation__icons" data-js="button-bookmarks">
+        <i class="fa-solid fa-bookmark fa-2x navigation__icons--style"></i>
+      </button>
+      <button class="navigation__icons" data-js="button-create">
+        <i class="fa-solid fa-square-plus fa-2x navigation__icons--style"></i>
+      </button>
+      <button class="navigation__icons" data-js="button-profile">
+        <i class="fa-solid fa-user fa-2x navigation__icons--style"></i>
+      </button>
     </footer>
   </body>
 </html>
