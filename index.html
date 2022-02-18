@@ -50,12 +50,13 @@
               <a href="#">Kazakhstan and Russia</a>
             </li>
           </ul>
-          <div class="card__answer hidden" data-js="card-answer">
-            Canada and the United States share the longest land border in the
-            world.<br />
-            Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
-            <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
-          </div>
+          <p class="card__answer hidden" data-js="card-answer">
+              Canada and the United States share the longest land border in the
+              world.<br />
+              Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
+              <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
+            </p>
+          </p>
         </article>
 
         <article class="card" data-js="cards">
@@ -77,11 +78,12 @@
               class="card__button--style"
               data-js="show-answer"
               aria-pressed="false"
+              class="hidden"
             >
               Show Answer
             </button>
           </div>
-          <ul class="card__tags" role="list">
+          <ul class="card__tags hidden" role="list" data-js="hide-answer-tags">
             <li class="card__tags--style">
               <a href="#">Land of thousand lakes</a>
             </li>
@@ -93,6 +95,12 @@
               <a href="#">Land of the blue sky</a>
             </li>
           </ul>
+          <p class="card__answer hidden" data-js="card-answer">
+            In Japanese, Nippon and Nihon (both of which mean Japan in Japanese)
+            roughly mean the “sun's origin,” or in other words, the place where
+            the sun originates. That's why it's often translated as "The Land of
+            the Rising Sun".
+          </p>
         </article>
 
         <article class="card" data-js="cards">
@@ -115,16 +123,28 @@
               class="card__button--style"
               data-js="show-answer"
               aria-pressed="false"
+              class="hidden"
             >
               Show Answer
             </button>
           </div>
-          <ul class="card__tags" role="list">
+          <ul class="card__tags hidden" role="list" data-js="hide-answer-tags">
             <li class="card__tags--style"><a href="#">Azerbaijan</a></li>
             <li class="card__tags--style"><a href="#">Georgia</a></li>
             <li class="card__tags--style"><a href="#">Turkmenistan</a></li>
             <li class="card__tags--style"><a href="#">Uzbekistan</a></li>
           </ul>
+          <p class="card__answer hidden" data-js="card-answer">
+              In the Karakum desert in Turkmenistan, near the village of Darvaza,
+            is a hole that has been on fire for over 50 years. Though
+            technically called the Darvaza gas crater, locals know the crater as
+            “The Gates of Hell.” Its fiery glow can be seen for miles around.
+            The Gates of Hell crater was created in 1971 when a Soviet drilling
+            rig accidentally punched into a massive underground natural gas
+            cavern, causing the ground to collapse and the entire drilling rig
+            to fall in.
+            </p>
+          </p>
         </article>
       </section>
 
@@ -167,8 +187,7 @@
             data-js="toggleBookmark"
             class="card__bookmark"
             type="button"
-            aria-pressed="false"
-          >
+            aria-pressed="false">
             <i class="fa-solid fa-bookmark fa-3x"></i>
           </button>
           <h2 class="card__title">Question 2</h2>
