@@ -38,11 +38,12 @@
               class="card__button--style"
               data-js="show-answer"
               aria-pressed="false"
+              class="hidden"
             >
               Show Answer
             </button>
           </div>
-          <ul class="card__tags" role="list">
+          <ul class="card__tags hidden" role="list" data-js="hide-answer-tags">
             <li class="card__tags--style"><a href="#">USA and Canada</a></li>
             <li class="card__tags--style"><a href="#">China and Russia</a></li>
             <li class="card__tags--style">
@@ -52,9 +53,15 @@
               <a href="#">Kazakhstan and Russia</a>
             </li>
           </ul>
+          <div class="card__answer hidden" data-js="card-answer">
+            Canada and the United States share the longest land border in the
+            world.<br />
+            Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
+            <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
+          </div>
         </article>
 
-        <article class="card">
+        <article class="card" data-js="cards">
           <button
             data-js="toggleBookmark"
             class="card__bookmark"
@@ -67,7 +74,7 @@
           <div class="card__question">
             Which two nations share the longest border in the world?
           </div>
-          <div class="card__button">
+          <div class="card__button-hide">
             <button class="card__button--style">Hide Answer</button>
           </div>
           <div class="card__answer">
@@ -76,7 +83,6 @@
             Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
             <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
           </div>
-          <div></div>
           <ul class="card__tags--answer" role="list">
             <li class="card__tags--style"><a href="#">Tag 1</a></li>
             <li class="card__tags--style"><a href="#">Tag 2</a></li>
@@ -85,7 +91,7 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="card" data-js="cards">
           <button
             data-js="toggleBookmark"
             class="card__bookmark"
@@ -99,7 +105,14 @@
             Which of the following is the nickname of Japan?
           </div>
           <div class="card__button">
-            <button class="card__button--style">Show Answer</button>
+            <button
+              type="button"
+              class="card__button--style"
+              data-js="show-answer"
+              aria-pressed="false"
+            >
+              Show Answer
+            </button>
           </div>
           <ul class="card__tags" role="list">
             <li class="card__tags--style">
@@ -115,7 +128,7 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="card" data-js="cards">
           <button
             data-js="toggleBookmark"
             class="card__bookmark"
@@ -146,7 +159,7 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="card" data-js="cards">
           <button
             data-js="toggleBookmark"
             class="card__bookmark"
@@ -161,7 +174,14 @@
             that has been on fire since 1971?
           </div>
           <div class="card__button">
-            <button class="card__button--style">Show Answer</button>
+            <button
+              type="button"
+              class="card__button--style"
+              data-js="show-answer"
+              aria-pressed="false"
+            >
+              Show Answer
+            </button>
           </div>
           <ul class="card__tags" role="list">
             <li class="card__tags--style"><a href="#">Azerbaijan</a></li>
@@ -171,7 +191,7 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="card" data-js="cards">
           <button
             data-js="toggleBookmark"
             class="card__bookmark"
@@ -211,7 +231,7 @@
       <!-- bookmark -->
 
       <section class="hidden" data-js="page-bookmarks">
-        <article class="card">
+        <article class="card" data-js="cards">
           <button type="button" class="button__none" aria-pressed="false">
             <i class="fa-solid fa-bookmark fa-3x card__bookmark"></i>
           </button>
