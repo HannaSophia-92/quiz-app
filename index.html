@@ -13,12 +13,9 @@
     <script defer src="index.js" type="module"></script>
   </head>
   <body>
-    <header>
-      <h1>Quiz App</h1>
-    </header>
-
     <main>
       <section data-js="page-home" class="hidden">
+        <h1 class="card__header">Quiz App</h1>
         <article class="card" data-js="cards">
           <button
             data-js="toggleBookmark"
@@ -70,36 +67,6 @@
           >
             <i class="fa-solid fa-bookmark fa-3x"></i>
           </button>
-          <h2 class="card__title">Question 1</h2>
-          <div class="card__question">
-            Which two nations share the longest border in the world?
-          </div>
-          <div class="card__button-hide">
-            <button class="card__button--style">Hide Answer</button>
-          </div>
-          <div class="card__answer">
-            Canada and the United States share the longest land border in the
-            world.<br />
-            Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
-            <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
-          </div>
-          <ul class="card__tags--answer" role="list">
-            <li class="card__tags--style"><a href="#">Tag 1</a></li>
-            <li class="card__tags--style"><a href="#">Tag 2</a></li>
-            <li class="card__tags--style"><a href="#">Tag 3</a></li>
-            <li class="card__tags--style"><a href="#">Tag 4</a></li>
-          </ul>
-        </article>
-
-        <article class="card" data-js="cards">
-          <button
-            data-js="toggleBookmark"
-            class="card__bookmark"
-            type="button"
-            aria-pressed="false"
-          >
-            <i class="fa-solid fa-bookmark fa-3x"></i>
-          </button>
           <h2 class="card__title">Question 2</h2>
           <div class="card__question">
             Which of the following is the nickname of Japan?
@@ -137,37 +104,6 @@
           >
             <i class="fa-solid fa-bookmark fa-3x"></i>
           </button>
-          <h2 class="card__title">Question 2</h2>
-          <div class="card__question">
-            Which of the following is the nickname of Japan?
-          </div>
-          <div class="card__button">
-            <button class="card__button--style">Hide Answer</button>
-          </div>
-          <div class="card__answer">
-            In Japanese, Nippon and Nihon (both of which mean Japan in Japanese)
-            roughly mean the “sun's origin,” or in other words, the place where
-            the sun originates. That's why it's often translated as "The Land of
-            the Rising Sun".
-          </div>
-          <div></div>
-          <ul class="card__tags--answer" role="list">
-            <li class="card__tags--style"><a href="#">Tag 1</a></li>
-            <li class="card__tags--style"><a href="#">Tag 2</a></li>
-            <li class="card__tags--style"><a href="#">Tag 3</a></li>
-            <li class="card__tags--style"><a href="#">Tag 4</a></li>
-          </ul>
-        </article>
-
-        <article class="card" data-js="cards">
-          <button
-            data-js="toggleBookmark"
-            class="card__bookmark"
-            type="button"
-            aria-pressed="false"
-          >
-            <i class="fa-solid fa-bookmark fa-3x"></i>
-          </button>
           <h2 class="card__title">Question 3</h2>
           <div class="card__question">
             In which country can you find the “Door to Hell”, a natural gas pit
@@ -188,6 +124,71 @@
             <li class="card__tags--style"><a href="#">Georgia</a></li>
             <li class="card__tags--style"><a href="#">Turkmenistan</a></li>
             <li class="card__tags--style"><a href="#">Uzbekistan</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- bookmark -->
+
+      <section class="hidden" data-js="page-bookmarks">
+        <h2 class="card__header">Bookmarks</h2>
+        <article class="card" data-js="cards">
+          <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
+            type="button"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question 1</h2>
+          <div class="card__question">
+            Which two nations share the longest border in the world?
+          </div>
+          <div class="card__button-hide">
+            <button class="card__button--style">Hide Answer</button>
+          </div>
+          <div class="card__answer">
+            Canada and the United States share the longest land border in the
+            world.<br />
+            Canada - America: 8.893km. <br />Kazakhstan - Russia: 7.644km.
+            <br />Chile - Argentina: 6.691km. <br />China - Russia: 4.133km.
+          </div>
+          <ul class="card__tags--answer" role="list">
+            <li class="card__tags--style"><a href="#">world</a></li>
+            <li class="card__tags--style"><a href="#">europe</a></li>
+            <li class="card__tags--style"><a href="#">flags</a></li>
+            <li class="card__tags--style"><a href="#">mix</a></li>
+          </ul>
+        </article>
+
+        <article class="card" data-js="cards">
+          <button
+            data-js="toggleBookmark"
+            class="card__bookmark"
+            type="button"
+            aria-pressed="false"
+          >
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question 2</h2>
+          <div class="card__question">
+            Which of the following is the nickname of Japan?
+          </div>
+          <div class="card__button">
+            <button class="card__button--style">Hide Answer</button>
+          </div>
+          <div class="card__answer">
+            In Japanese, Nippon and Nihon (both of which mean Japan in Japanese)
+            roughly mean the “sun's origin,” or in other words, the place where
+            the sun originates. That's why it's often translated as "The Land of
+            the Rising Sun".
+          </div>
+          <ul class="card__tags--answer" role="list">
+            <li class="card__tags--style"><a href="#">world</a></li>
+            <li class="card__tags--style"><a href="#">europe</a></li>
+            <li class="card__tags--style"><a href="#">flags</a></li>
+            <li class="card__tags--style"><a href="#">mix</a></li>
           </ul>
         </article>
 
@@ -218,38 +219,11 @@
             cavern, causing the ground to collapse and the entire drilling rig
             to fall in.
           </div>
-          <div></div>
           <ul class="card__tags--answer" role="list">
-            <li class="card__tags--style"><a href="#">Tag 1</a></li>
-            <li class="card__tags--style"><a href="#">Tag 2</a></li>
-            <li class="card__tags--style"><a href="#">Tag 3</a></li>
-            <li class="card__tags--style"><a href="#">Tag 4</a></li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- bookmark -->
-
-      <section class="hidden" data-js="page-bookmarks">
-        <article class="card" data-js="cards">
-          <button type="button" class="button__none" aria-pressed="false">
-            <i class="fa-solid fa-bookmark fa-3x card__bookmark"></i>
-          </button>
-          <h2 class="card__title">Question 1</h2>
-          <div class="card__question">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-            quam voluptatem nesciunt assumenda reiciendis iusto alias eum.
-            Veniam, cum ipsam? Facilis blanditiis laborum quas quasi iste
-            voluptas quibusdam suscipit voluptatem.
-          </div>
-          <div class="card__button">
-            <button class="card__button--style">Show Answer</button>
-          </div>
-          <ul class="card__tags" role="list">
-            <li class="card__tags--style"><a href="#">Tag 1</a></li>
-            <li class="card__tags--style"><a href="#">Tag 2</a></li>
-            <li class="card__tags--style"><a href="#">Tag 3</a></li>
-            <li class="card__tags--style"><a href="#">Tag 4</a></li>
+            <li class="card__tags--style"><a href="#">world</a></li>
+            <li class="card__tags--style"><a href="#">europe</a></li>
+            <li class="card__tags--style"><a href="#">flags</a></li>
+            <li class="card__tags--style"><a href="#">mix</a></li>
           </ul>
         </article>
       </section>
@@ -257,6 +231,7 @@
       <!-- create -->
 
       <section class="hidden" data-js="page-create">
+        <h2 class="card__header">Create</h2>
         <form
           class="form"
           aria-labelledby="form-heading"
@@ -309,6 +284,7 @@
       <!-- profile -->
 
       <section class="hidden" data-js="page-profile">
+        <h2 class="card__header">Profile</h2>
         <figure class="profile">
           <img
             class="profile__picture"
