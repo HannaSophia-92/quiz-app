@@ -1,3 +1,5 @@
+console.clear();
+
 function showAndHideButton() {
   const showAnswerButton = document.querySelector('[data-js="show-answer"]');
 
@@ -12,6 +14,7 @@ function showAndHideButton() {
       isShowAnswerPressed = true;
     }
   });
+  console.log(isShowAnswerPressed);
 }
 
 export default showAndHideButton;
