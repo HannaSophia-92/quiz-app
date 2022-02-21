@@ -14,7 +14,7 @@
   </head>
   <body>
     <main>
-      <section data-js="page-home" class="hidden">
+      <section data-js="page-home">
         <h1 class="card__header">Quiz App</h1>
         <article class="card" data-js="cards">
           <button
@@ -35,14 +35,17 @@
               class="card__button--style"
               data-js="show-answer"
               aria-pressed="false"
-              class="hidden"
             >
               Show Answer
             </button>
           </div>
-          <ul class="card__tags hidden" role="list" data-js="hide-answer-tags">
-            <li class="card__tags--style"><a href="#">USA and Canada</a></li>
-            <li class="card__tags--style"><a href="#">China and Russia</a></li>
+          <ul class="card__tags" role="list">
+            <li data-js="hide-answer-tags" class="card__tags--style">
+              <a href="#">USA and Canada</a>
+            </li>
+            <li data-js="hide-answer-tags" class="card__tags--style">
+              <a href="#">China and Russia</a>
+            </li>
             <li class="card__tags--style">
               <a href="#">Chile and Argentina</a>
             </li>
