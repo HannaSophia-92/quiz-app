@@ -177,7 +177,9 @@
             Which two nations share the longest border in the world?
           </div>
           <div class="card__button-hide">
-            <button class="card__button--style">Hide Answer</button>
+            <button data-js="show-answer" class="card__button--style">
+              Hide Answer
+            </button>
           </div>
           <div class="card__answer">
             Canada and the United States share the longest land border in the
@@ -207,7 +209,9 @@
             Which of the following is the nickname of Japan?
           </div>
           <div class="card__button">
-            <button class="card__button--style">Hide Answer</button>
+            <button data-js="show-answer" class="card__button--style">
+              Hide Answer
+            </button>
           </div>
           <div class="card__answer">
             In Japanese, Nippon and Nihon (both of which mean Japan in Japanese)
@@ -238,7 +242,9 @@
             that has been on fire since 1971?
           </div>
           <div class="card__button">
-            <button class="card__button--style">Hide Answer</button>
+            <button data-js="show-answer" class="card__button--style">
+              Hide Answer
+            </button>
           </div>
           <div class="card__answer">
             In the Karakum desert in Turkmenistan, near the village of Darvaza,
@@ -271,13 +277,18 @@
           <span class="form__header">
             <label for="question" id="form-heading">Add Question</label>
           </span>
+          <small class="counter">
+            (<span data-js="counter-question">300 </span> characters left)
+          </small>
           <textarea
             id="form-description"
+            data-js="textarea-question"
             class="form__textarea"
             name="question"
             id="question"
-            cols="30"
-            rows="10"
+            cols="40"
+            rows="8"
+            maxlength="300"
             placeholder="Add question here..."
           ></textarea>
         </form>
@@ -290,22 +301,35 @@
           <span class="form__header">
             <label for="answer" id="form-heading">Add Answer</label>
           </span>
+          <small class="counter">
+            (<span data-js="counter-question">500 </span> characters left)
+          </small>
           <textarea
             id="form-description"
+            data-js="textarea-answer"
             class="form__textarea"
             name="answer"
             id="answer"
-            cols="30"
+            cols="40"
             rows="10"
+            maxlength="500"
             placeholder="Add answer here..."
           ></textarea>
+        </form>
+        <form
+          class="form"
+          aria-labelledby="form-heading"
+          aria-describedby="form-description"
+        >
           <label class="form__header" for="tags">Add tags</label>
-          <input
+          <textarea
             class="form__textarea"
             type="text"
             id="tags"
-            placeholder="tag1, tag2 ,tag3..."
-          />
+            cols="40"
+            rows="10"
+            placeholder="Add tags divided by comma..."
+          ></textarea>
           <span class="form__button">
             <button type="submit" class="form__button--submit">Submit</button>
           </span>
