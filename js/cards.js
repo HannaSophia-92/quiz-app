@@ -7,6 +7,8 @@ function cards() {
     const toggleBookmarks = card.querySelector('[data-js="toggleBookmark"]');
     const showAnswerButton = card.querySelector('[data-js="show-answer"]');
     const cardAnswer = card.querySelector('[data-js="card-answer"]');
+    const hideAnswerTags = card.querySelector('[data-js="hide-answer-tags"]');
+
     let shownAnswer = true;
 
     toggleBookmarks.addEventListener('click', () => {
@@ -16,6 +18,7 @@ function cards() {
     showAnswerButton.addEventListener('click', () => {
       cardAnswer.classList.toggle('hidden');
       showAnswerButton.classList.toggle('card__button-hide');
+      hideAnswerTags.classList.toggle('hidden');
 
       if (shownAnswer) {
         showAnswerButton.textContent = 'Hide Answer';
