@@ -40,7 +40,8 @@
 
 .profile__tags--header {
   text-align: center;
-  padding: 1rem;
+  padding: 5px;
+  margin: 16px;
 }
 
 .profile__tags--style {
@@ -58,12 +59,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3.2rem;
+  margin: 20px;
+  padding: 15px;
   text-align: center;
 }
 
 .profile__button--logout {
-  margin-top: 1rem;
   padding: 15px;
   width: 130px;
   background-color: rgba(61, 70, 9, 0.795);
