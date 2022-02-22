@@ -9,7 +9,7 @@ function cards() {
     const cardAnswer = card.querySelector('[data-js="card-answer"]');
     const hideAnswerTags = card.querySelector('[data-js="hide-answer-tags"]');
 
-    let shownAnswer = true;
+    let answerShown = true;
 
     toggleBookmarks.addEventListener('click', () => {
       toggleBookmarks.classList.toggle('card__active');
@@ -20,12 +20,10 @@ function cards() {
       showAnswerButton.classList.toggle('card__button-hide');
       hideAnswerTags.classList.toggle('hidden');
 
-      if (shownAnswer) {
+      if (answerShown == false) {
         showAnswerButton.textContent = 'Hide Answer';
-        shownAnswer = false;
       } else {
         showAnswerButton.textContent = 'Show Answer';
-        shownAnswer = true;
       }
     });
   });
