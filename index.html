@@ -270,12 +270,14 @@
       <section class="hidden" data-js="page-create">
         <h2 class="card__header">Create</h2>
         <form
+          data-js="form"
           class="form"
-          aria-labelledby="form-heading"
+          autocomplete="off"
+          aria-labelledby="question-input"
           aria-describedby="form-description"
         >
           <span class="form__header">
-            <label for="question" id="form-heading">Add Question</label>
+            <label for="question-input">Add Question</label>
           </span>
           <small class="counter">
             (<span data-js="counter-question">300 </span> characters left)
@@ -285,53 +287,42 @@
             data-js="textarea-question"
             class="form__textarea"
             name="question"
-            id="question"
+            id="question-input"
             cols="40"
-            rows="8"
+            rows="10"
             maxlength="300"
             placeholder="Add question here..."
           ></textarea>
-        </form>
 
-        <form
-          class="form"
-          aria-labelledby="form-heading"
-          aria-describedby="form-description"
-        >
           <span class="form__header">
-            <label for="answer" id="form-heading">Add Answer</label>
+            <label for="answer-input">Add Answer</label>
           </span>
           <small class="counter">
-            (<span data-js="counter-question">500 </span> characters left)
+            (<span data-js="counter-answer">500 </span> characters left)
           </small>
           <textarea
             id="form-description"
             data-js="textarea-answer"
             class="form__textarea"
             name="answer"
-            id="answer"
+            id="answer-input"
             cols="40"
             rows="10"
             maxlength="500"
             placeholder="Add answer here..."
           ></textarea>
-        </form>
-        <form
-          class="form"
-          aria-labelledby="form-heading"
-          aria-describedby="form-description"
-        >
-          <label class="form__header" for="tags">Add tags</label>
+
+          <label class="form__header" for="tags-input">Add tags</label>
           <textarea
             class="form__textarea"
-            type="text"
-            id="tags"
+            name="tags"
+            id="tags-input"
             cols="40"
-            rows="10"
+            rows="3"
             placeholder="Add tags divided by comma..."
           ></textarea>
           <span class="form__button">
-            <button type="submit" class="form__button--submit">Submit</button>
+            <button class="form__button--submit">Submit</button>
           </span>
         </form>
       </section>
