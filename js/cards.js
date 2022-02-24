@@ -2,7 +2,7 @@ console.clear();
 
 const quizCards = document.querySelectorAll('[data-js="cards"]');
 
-const data = [
+const cardSet = [
   {
     question: 'Which two nations share the longest border in the world?',
     answer:
@@ -16,9 +16,9 @@ const data = [
   },
 ];
 
-function renderCards(list) {
+function renderCards() {
   quizCards.innerHTML = '';
-  list.forEach(card => {
+  cardSet.forEach(card => {
     const cardElement = document.createElement('article');
     cardElement.className = 'card';
     cardElement.innerHTML = `
@@ -35,7 +35,6 @@ function renderCards(list) {
           </div>
           <div class="card__button">
             <button
-              type="button"
               class="card__button--style"
               data-js="show-answer"
               aria-pressed="false"
@@ -43,7 +42,7 @@ function renderCards(list) {
               Show Answer
             </button>
           </div>
-          <p class="card__answer hidden" data-js="card-answer">${
+          <p class="card__answer" data-js="card-answer" hidden>${
             card.answer
           }</p>
           <ul class="card__tags--answer" role="list">${card.tags
@@ -62,10 +61,17 @@ function renderCards(list) {
       toggleBookmarks.classList.toggle('card__active');
       console.log(toggleBookmarks);
     });
+    const showAnswerButton = cardElement.querySelector(
+      '[data-js="show-answer"]'
+    );
+    const cardAnswer = cardElement.querySelector('[data-js="card-answer"]');
+
+    showAnswerButton.addEventListener('click', () => {
+      cardAnswer.toggleAttribute('hidden');
+    });
   });
 }
-
-renderCards(data);
+renderCards();
 
 function cards() {
   const quizCards = document.querySelectorAll('[data-js="cards"]');

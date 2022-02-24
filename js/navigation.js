@@ -40,7 +40,6 @@ function navigation() {
     pageCreate.classList.add('hidden');
     pageProfile.classList.remove('hidden');
   });
-  console.log(pageHome);
 }
 
 export default navigation;
