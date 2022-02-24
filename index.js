@@ -1,7 +1,11 @@
 import navigation from './js/navigation.js';
-import cards from './js/cards.js';
+import { cards, renderCards } from './js/cards.js';
 import counter from './js/counter.js';
+import create from './js/create.js';
 
 navigation();
-cards();
 counter();
+cards();
+renderCards();
+
+create();
